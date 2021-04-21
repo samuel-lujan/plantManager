@@ -20,7 +20,7 @@ export function Welcome() {
                     Não esqueca mais de regar suas plantas. Nós cuidamos de lembrar você
                     sempre que precisar
                 </Text>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} activeOpacity={0.7}>
                     <Text style={styles.buttonIcon}> > </Text>
                 </TouchableOpacity>
             </View>
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         height: 56,
         width: 56,
+        marginTop: 30,
     },
     buttonIcon: {
         fontSize: 28,

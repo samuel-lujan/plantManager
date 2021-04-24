@@ -3,6 +3,7 @@ import { View, Text, SafeAreaView, StyleSheet, Image, Dimensions, TouchableOpaci
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
+import { Feather } from '@expo/vector-icons';
 
 import wateringImg from '../assets/watering.png';
 
@@ -13,7 +14,7 @@ export function Welcome() {
                 <Text style={styles.title}>
                     Gerencie {'\n'}
                     Suas Plantas de {'\n'}
-                    Forma Fácil
+                    Forma Fácil 
                 </Text>
                 <Image style={styles.imagem} source={wateringImg} resizeMode="contain"/>
                 <Text style={styles.subtitle}>
@@ -21,7 +22,7 @@ export function Welcome() {
                     sempre que precisar
                 </Text>
                 <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-                    <Text style={styles.buttonIcon}> > </Text>
+                    <Text ><Feather name="chevron-right" style={styles.buttonIcon}/></Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>

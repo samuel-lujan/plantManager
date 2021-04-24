@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, TouchableOpacity, Text, TouchableOpacityProps} from 'react-native';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
+//teste
 
 interface ButtonProps extends TouchableOpacityProps{
     title: string;
